@@ -4,7 +4,8 @@ A control that allows you to embed an HTML editor in your application.
 You will need to host a single page somewhere that displays a TinyMCE control.
 
 # Your Web Page
-index.html example
+index.html example:
+
 ...
 <!DOCTYPE html>
 <html>
@@ -21,6 +22,7 @@ index.html example
 </body>
 </html>
 ...
+
 See the [TinyMCE Website]{http://tinymce.com} for more details and information about styling the TinyMCE web control.
 
 # Your WPF Window
