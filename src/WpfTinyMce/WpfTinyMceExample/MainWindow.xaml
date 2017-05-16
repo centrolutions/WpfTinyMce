@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfTinyMceExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTinyMceExample"
+        xmlns:mce="clr-namespace:WpfTinyMce;assembly=WpfTinyMce"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <mce:TinyMce x:Name="tinyMce" HtmlValue="{Binding Html, Mode=TwoWay}" TinyMceUrl="http://centrolutions.com/tinymce/index.html" />
+
+        <Button x:Name="ShowHtmlButton" Content="Show HTML" Grid.Row="1" Click="ShowHtmlButton_Click" />
+
+        <Button x:Name="LoadSampleDocButton" Content="Load Sample Document" Grid.Row="2" Click="LoadSampleDocButton_Click" />
+    </Grid>
+</Window>
